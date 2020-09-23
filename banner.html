@@ -1,0 +1,49 @@
+<html><head><title>Dzzies ChatSevrer</title></head>
+
+<body bgcolor="#000000" text="#ffffff" link="#ffffff" vlink="#ffffff">
+
+<FORM METHOD="GET" ACTION="/banner.html" NAME="input" >
+
+<table cellpadding=0 border=0 width="100%">
+
+<tr><td> %USERNAME% </td><td>
+
+<select name="ACTION">
+	<option value="says to">says to
+	<option value="whispers to">PRIVATELY whispers to
+</select> 
+
+<select name="WHOTO">
+	<option value="ALL">ALL
+	%CHATTERS%
+</select> 
+
+</td></tr>
+
+<tr><td>Message : </td><td>
+
+<INPUT TYPE="TEXT" NAME="SAYS" SIZE=40 VALUE="">
+<INPUT TYPE="SUBMIT" NAME="SUBMIT" VALUE="* Submit *">
+<INPUT NAME="USER" TYPE="HIDDEN" VALUE="%USERNAME%">
+<INPUT NAME="NOPIC" TYPE="HIDDEN" VALUE="">
+
+</FORM>
+
+</td></tr>
+</table>
+
+<table width=100% bgcolor="#9933CC"><tr><td>
+
+<FORM ACTION="config.html" METHOD="GET" TARGET="_top">
+	<INPUT NAME="USER"      TYPE="HIDDEN" VALUE="%USERNAME%">
+	<INPUT NAME="NOPIC"     TYPE="HIDDEN" VALUE="">
+	<INPUT NAME="LEAVEIT"   TYPE="SUBMIT" VALUE="Leave">
+	<INPUT NAME="RELOAD"    TYPE="SUBMIT" VALUE="Reload">
+	<INPUT NAME="DOCONFIG"  TYPE="SUBMIT" VALUE="Full Config">
+</FORM>
+
+</td></tr></table>
+
+<script> input.SAYS.focus(); </script>
+
+</BODY></HTML>
